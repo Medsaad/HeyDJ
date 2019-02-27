@@ -1,9 +1,3 @@
-/*!
- * Start Bootstrap - Coming Soon v5.0.3 (https://startbootstrap.com/template-overviews/coming-soon)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
- */
-
 html {
 	height: 100%;
 }
@@ -12,7 +6,7 @@ body {
 	height: 100%;
 	min-height: 35rem;
 	position: relative;
-	font-family: "Source Sans Pro";
+	font-family: "Gotham Book" !important;
 	font-weight: 300;
 }
 
@@ -22,8 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Merriweather";
 	font-weight: 700;
+	font-family: "Gotham Book" !important;
 }
 
 video {
@@ -56,7 +50,6 @@ video {
 	height: 100%;
 	width: 100%;
 	background-color: #000;
-	opacity: 0.7;
 	z-index: 1;
 }
 
@@ -69,14 +62,17 @@ video {
 
 .masthead .masthead-content h1 {
 	font-size: 2.5rem;
+	font-family: "Gotham Book" !important;
 }
 
 .masthead .masthead-content p {
 	font-size: 1.2rem;
+	font-family: "Gotham Book" !important;
 }
 
 .masthead .masthead-content p strong {
 	font-weight: 700;
+	font-family: "Gotham Book" !important;
 }
 
 .masthead .masthead-content .input-group-newsletter input {
@@ -100,11 +96,20 @@ video {
 		padding-bottom: 0;
 	}
 	.masthead .masthead-content {
-		padding-left: 3rem;
-		padding-right: 10rem;
+		display: block;
+		margin: 0 auto;
+		border: solid 2px #fff;
+		padding: 50px;
+		height: calc(100vh - 230px);
+		max-width: 800px;
 	}
 	.masthead .masthead-content h1 {
-		font-size: 3.5rem;
+		font-size: 3rem;
+		line-height: 1.4;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
 	}
 	.masthead .masthead-content p {
 		font-size: 1.3rem;
@@ -120,6 +125,7 @@ video {
 
 .input {
 	font-weight: 300 !important;
+	font-family: "Gotham Black Regular" !important;
 }
 
 .overlay-img {
@@ -130,7 +136,7 @@ video {
 
 .logo {
 	width: 200px;
-	margin: 50px auto;
+	margin: 50px 0;
 	display: block;
 }
 
@@ -138,7 +144,8 @@ video {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 350px;
+	height: 300px;
+	border: 5px solid white;
 }
 
 .band:hover {
@@ -195,6 +202,7 @@ video {
 	padding: 7px;
 	color: #fff;
 	font-size: 20px;
+	font-family: "Gotham Black Regular" !important;
 }
 
 .band-name {
@@ -202,5 +210,53 @@ video {
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+	color: #fff;
+}
+
+.band-name-admin {
+	padding: 7px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.admin-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.band-form {
+	z-index: 99;
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+h1.mb-3 {
+	padding: 42px;
+	font-family: "Gotham Book" !important;
+}
+
+.sub_button {
+	margin: 10px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	font-family: "Gotham Book";
+}
+
+.sub_button:hover {
+	text-decoration: none;
 	color: #fff;
 }
