@@ -130,14 +130,19 @@ video {
 
 .logo {
 	width: 200px;
-	margin: 0 auto;
+	margin: 50px auto;
 	display: block;
 }
 
 .band {
+	position: relative;
 	display: block;
 	width: 100%;
 	height: 350px;
+}
+
+.band:hover {
+	text-decoration: none;
 }
 
 .color1 {
@@ -151,4 +156,51 @@ video {
 }
 .color4 {
 	background-color: #62d350;
+}
+
+.band-img {
+	width: 100%;
+	height: 100%;
+}
+
+.band-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.4;
+	z-index: 1;
+}
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+	transform: scale(1.1);
+}
+
+.counter {
+	position: absolute;
+	padding: 7px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.band-name {
+	padding: 7px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: #fff;
 }
