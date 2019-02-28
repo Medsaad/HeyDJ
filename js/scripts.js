@@ -17,21 +17,45 @@ var model = {
 		}
 	],
 	mentors: {
-		Misty: {
+		Misty1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
-			color: "#00c2ae"
+			color: "#00c2ae",
+			djs: ["DJ1", "DJ2"]
 		},
-		A_Squared: {
+		Misty2: {
+			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
+			color: "#00c2ae",
+			djs: ["DJ1", "DJ2"]
+		},
+		A_Squared1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
-			color: "#f45b00"
+			color: "#f45b00",
+			djs: ["DJ1", "DJ2"]
 		},
-		Mohasseb: {
+		A_Squared2: {
+			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
+			color: "#f45b00",
+			djs: ["DJ1", "DJ2"]
+		},
+		Mohasseb1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
-			color: "#6e1390"
+			color: "#6e1390",
+			djs: ["DJ1", "DJ2"]
 		},
-		Ashmawy: {
+		Mohasseb2: {
+			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
+			color: "#6e1390",
+			djs: ["DJ1", "DJ2"]
+		},
+		Ashmawy1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
-			color: "#62d350"
+			color: "#62d350",
+			djs: ["DJ1", "DJ2"]
+		},
+		Ashmawy2: {
+			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
+			color: "#62d350",
+			djs: ["DJ1", "DJ2"]
 		}
 	}
 };
@@ -65,6 +89,13 @@ var voteCounter = function(obj, e, band) {
 		localStorage.setItem("band", JSON.stringify(model.bands));
 		loadFrontEnd();
 	}, 3000);
+};
+
+var fillDJs = function(obj, e, band) {
+	document.getElementById("DJ1-" + band).value =
+		model.mentors[obj.options[obj.selectedIndex].value].djs[0];
+	document.getElementById("DJ2-" + band).value =
+		model.mentors[obj.options[obj.selectedIndex].value].djs[1];
 };
 
 var loadFrontEnd = function(obj, e) {
