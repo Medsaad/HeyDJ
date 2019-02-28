@@ -104,6 +104,7 @@ var saveData = function(obj, e) {
 	model.bands[0].dj2 = document.getElementById("DJ2-1").value;
 
 	var e2 = document.getElementById("mentor_sel-2");
+	console.log(e2.options[e2.selectedIndex].value);
 	model.bands[1].mentor = e2.options[e2.selectedIndex].value;
 
 	model.bands[1].dj1 = document.getElementById("DJ1-2").value;
