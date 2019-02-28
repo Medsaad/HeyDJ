@@ -318,4 +318,5 @@ h1.mb-3 {
 #manage-btn a,
 #manage-btn a:hover {
 	color: #fff;
+	display: block;
 }

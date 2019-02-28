@@ -20,42 +20,42 @@ var model = {
 		Misty1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ11", "DJ22"]
 		},
 		Misty2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ13", "DJ24"]
 		},
 		A_Squared1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ15", "DJ26"]
 		},
 		A_Squared2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ17", "DJ28"]
 		},
 		Mohasseb1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ19", "DJ210"]
 		},
 		Mohasseb2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ111", "DJ212"]
 		},
 		Ashmawy1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ113", "DJ214"]
 		},
 		Ashmawy2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ1", "DJ2"]
+			djs: ["DJ115", "DJ216"]
 		}
 	}
 };
