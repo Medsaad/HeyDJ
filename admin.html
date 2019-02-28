@@ -7,11 +7,6 @@
 		<meta name="author" content="" />
 
 		<title>Hey, DJ</title>
-		<style>
-			body * {
-				font-family: Gotham;
-			}
-		</style>
 		<!-- Bootstrap core CSS -->
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="vendor/gotham-webfont/style.css" rel="stylesheet" />
@@ -38,10 +33,10 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class="band first">
+									<div class="band admin-band first">
 										<div class="band-form band2">
 											<div class="form-group">
-												<select class="form-control">
+												<select class="form-control" id="mentor_sel-1">
 													<option value="">- Select Mentor -</option>
 													<option value="Mohasseb">Mohasseb</option>
 													<option value="A-Squared">A-Squared</option>
@@ -50,10 +45,10 @@
 												</select>
 											</div>
 											<div class="form-group">
-												<input type="text" id="DJ1" placeholder="DJ 1" class="form-control" />
+												<input type="text" id="DJ1-1" placeholder="DJ 1" class="form-control" />
 											</div>
 											<div class="form-group">
-												<input type="text" id="DJ2" placeholder="DJ 2" class="form-control" />
+												<input type="text" id="DJ2-1" placeholder="DJ 2" class="form-control" />
 											</div>
 											<!-- <div class="custom-file">
 												<input type="file" class="custom-file-input" id="band_image" />
@@ -64,23 +59,23 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="band second">
+									<div class="band admin-band second">
 										<!-- <div class="band-overlay color2"></div> -->
 										<div class="band-form band2">
 											<div class="form-group">
-												<select class="form-control">
+												<select class="form-control" id="mentor_sel-2">
 													<option value="">- Select Mentor -</option>
 													<option value="Mohasseb">Mohasseb</option>
-													<option value="A-Squared">A-Squared</option>
+													<option value="A_Squared">A-Squared</option>
 													<option value="Misty">Misty</option>
 													<option value="Ashmawy">Ashmawy</option>
 												</select>
 											</div>
 											<div class="form-group">
-												<input type="text" id="DJ1" placeholder="DJ 1" class="form-control" />
+												<input type="text" id="DJ1-2" placeholder="DJ 1" class="form-control" />
 											</div>
 											<div class="form-group">
-												<input type="text" id="DJ2" placeholder="DJ 2" class="form-control" />
+												<input type="text" id="DJ2-2" placeholder="DJ 2" class="form-control" />
 											</div>
 											<!-- <div class="custom-file">
 												<input type="file" class="custom-file-input" id="band_image" />
@@ -90,8 +85,17 @@
 										<h2 class="band-name-admin">Band 2</h2>
 									</div>
 								</div>
-								<div class="col-md-12">
-									<a href="#" class="sub_button">APPLY CHANGES</a>
+								<div class="col-md-3">
+									<a href="#" onClick="saveData(this, event)" class="sub_button">APPLY</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#" onClick="showResults(this, event)" class="sub_button">SHOW RESULTS</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#" onClick="exportData(this, event)" class="reset_button">EXPORT DATA</a>
+								</div>
+								<div class="col-md-3">
+									<a href="#" onClick="resetData(this, event)" class="reset_button">RESET DATA</a>
 								</div>
 							</div>
 						</div>

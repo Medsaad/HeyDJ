@@ -7,11 +7,6 @@
 		<meta name="author" content="" />
 
 		<title>Hey, DJ</title>
-		<style>
-			body * {
-				font-family: Gotham;
-			}
-		</style>
 		<!-- Bootstrap core CSS -->
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="vendor/gotham-webfont/style.css" rel="stylesheet" />
@@ -39,26 +34,56 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<a href="#" onClick="" class="band first hvr-grow">
+									<a href="#" onClick="voteCounter(this,event,'band1')" class="band first hvr-grow">
 										<!-- <div class="band-overlay color1"></div> -->
-										<div class="counter color1"><span>155</span></div>
-										<h2 class="band-name color1">MOHASSEB</h2>
-										<img
-											src="https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg"
-											class="band-img"
-										/>
+										<!-- <div class="counter color1"><span>155</span></div> -->
+										<img src="img/pexels-photo-889087.jpeg" class="band-img" id="band-img-1" />
 									</a>
+									<div class="voting-results" id="v-res-1">
+										<p class="text-center"><span id="voting-number-1"></span>%</p>
+										<div
+											id="progress-1"
+											class="progress-wrap progress"
+											data-progresspercent="50"
+											data-height="10px"
+											data-width="100%"
+											data-speed="1500"
+											data-color="3a9c23"
+										>
+											<div class="progress-bar progress"></div>
+										</div>
+									</div>
+									<h2 class="band-name" id="band-name-1"></h2>
+									<p>DJ 1: <span id="dj1-name-1"></span></p>
+									<p>DJ 2: <span id="dj2-name-1"></span></p>
 								</div>
 								<div class="col-md-6">
-									<a href="#" onClick="" class="band second hvr-grow">
+									<a
+										href="#"
+										onClick="voteCounter(this,event,'band2')"
+										class="band second hvr-grow"
+									>
 										<!-- <div class="band-overlay color2"></div> -->
-										<div class="counter color4"><span>186</span></div>
-										<h2 class="band-name color4">MISTY</h2>
-										<img
-											src="https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg"
-											class="band-img"
-										/>
+										<!-- <div class="counter color4"><span>186</span></div> -->
+										<img src="img/pexels-photo-889087.jpeg" class="band-img" id="band-img-2" />
 									</a>
+									<div class="voting-results" id="v-res-2">
+										<p class="text-center"><span id="voting-number-2"></span>%</p>
+										<div
+											id="progress-2"
+											class="progress-wrap progress"
+											data-progresspercent="50"
+											data-height="10px"
+											data-width="100%"
+											data-speed="1500"
+											data-color="3a9c23"
+										>
+											<div class="progress-bar progress"></div>
+										</div>
+									</div>
+									<h2 class="band-name" id="band-name-2"></h2>
+									<p>DJ 1: <span id="dj1-name-2"></span></p>
+									<p>DJ 2: <span id="dj2-name-2"></span></p>
 								</div>
 							</div>
 						</div>
