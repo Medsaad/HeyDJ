@@ -20,42 +20,42 @@ var model = {
 		Misty1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ11", "DJ22"]
+			djs: ["DJ1", "DJ2"]
 		},
 		Misty2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ13", "DJ24"]
+			djs: ["DJ1", "DJ2"]
 		},
 		A_Squared1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ15", "DJ26"]
+			djs: ["DJ1", "DJ2"]
 		},
 		A_Squared2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ17", "DJ28"]
+			djs: ["DJ1", "DJ2"]
 		},
 		Mohasseb1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ19", "DJ210"]
+			djs: ["DJ1", "DJ2"]
 		},
 		Mohasseb2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ111", "DJ212"]
+			djs: ["DJ1", "DJ2"]
 		},
 		Ashmawy1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ113", "DJ214"]
+			djs: ["DJ1", "DJ2"]
 		},
 		Ashmawy2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ115", "DJ216"]
+			djs: ["DJ1", "DJ2"]
 		}
 	}
 };
@@ -79,11 +79,19 @@ var voteCounter = function(obj, e, band) {
 		localStorage.setItem("band", JSON.stringify(model.bands));
 	}
 	document.getElementById("voted1").style.display = "block";
+	document.getElementById("dj1-name-1").style.display = "none";
+	document.getElementById("dj2-name-1").style.display = "none";
+	document.getElementById("dj1-name-2").style.display = "none";
+	document.getElementById("dj2-name-2").style.display = "none";
 	//document.getElementById("voted2").style.display = "block";
 	loadFrontEnd();
 	setTimeout(function() {
 		obj.setAttribute("class", "band first hvr-grow");
 		document.getElementById("voted1").style.display = "none";
+		document.getElementById("dj1-name-1").style.display = "block";
+		document.getElementById("dj2-name-1").style.display = "block";
+		document.getElementById("dj1-name-2").style.display = "block";
+		document.getElementById("dj2-name-2").style.display = "block";
 		//document.getElementById("voted2").style.display = "none";
 		model.bands[2].showResults = 0;
 		localStorage.setItem("band", JSON.stringify(model.bands));

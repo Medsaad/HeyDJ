@@ -143,11 +143,12 @@ video {
 .band {
 	position: relative;
 	display: block;
-	width: 70%;
 	height: 140px;
-	margin: 0 auto;
+	width: 100%;
 	border: 5px solid white;
 	overflow: hidden;
+	margin-bottom: 30px;
+	opacity: 0.5;
 }
 
 .admin-band {
@@ -190,8 +191,8 @@ video {
 }
 
 .hvr-grow.clicked {
-	opacity: 0.5;
-	-webkit-transition: 1s ease; // you don't need to specify this again
+	opacity: 1;
+	-webkit-transition: 1s ease;
 }
 
 .counter {
@@ -207,9 +208,6 @@ video {
 	font-size: 25px;
 	text-align: center;
 	color: #fff;
-	position: absolute;
-	top: -40px;
-	left: 59px;
 }
 .dj-name {
 	text-align: center;
@@ -310,8 +308,8 @@ h1.mb-3 {
 
 #manage-btn {
 	position: absolute;
-	top: 10px;
-	right: 5px;
+	top: -43px;
+	right: -32px;
 	font-size: 14px;
 }
 
