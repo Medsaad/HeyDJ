@@ -63,9 +63,9 @@ var loadFrontEnd = function(obj, e) {
 	document.getElementById("band-name-2").style.color = model.mentors[model.bands[1].mentor].color;
 
 	document.getElementById("dj1-name-1").innerText = model.bands[0].dj1;
-	document.getElementById("dj2-name-1").innerText = model.bands[1].dj2;
+	document.getElementById("dj2-name-1").innerText = model.bands[0].dj2;
 
-	document.getElementById("dj1-name-2").innerText = model.bands[0].dj1;
+	document.getElementById("dj1-name-2").innerText = model.bands[1].dj1;
 	document.getElementById("dj2-name-2").innerText = model.bands[1].dj2;
 
 	if (model.bands[2].showResults == 1) {
