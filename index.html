@@ -27,7 +27,9 @@
 							<div id="no-content">
 								<div class="row">
 									<div class="col-md-4">
-										<img class="logo" src="img/Hey Dj.White.png" />
+										<a href="index.html">
+											<img class="logo" src="img/Hey Dj.White.png" />
+										</a>
 									</div>
 									<div class="col-md-8">
 										<h1 class="mb-3"><a target="_blank" href="admin.html">LAUNCH NEW VOTING</a></h1>
@@ -37,10 +39,15 @@
 							<div id="with-content">
 								<div class="row">
 									<div class="col-md-4">
-										<img class="logo" src="img/Hey Dj.White.png" />
+										<a href="index.html">
+											<img class="logo" src="img/Hey Dj.White.png" />
+										</a>
 									</div>
 									<div class="col-md-8">
 										<h1 class="mb-3">DJ VOTING</h1>
+										<p style="position: absolute;top: 165px;">
+											<span id="voted1">Voted Successfully!</span>
+										</p>
 									</div>
 								</div>
 								<div class="row">
@@ -65,12 +72,13 @@
 												data-speed="1500"
 												data-color="3a9c23"
 											>
-												<div class="progress-bar progress"></div>
+												<div class="progress-bar progress" id="progressz-1"></div>
 											</div>
 										</div>
+
 										<h2 class="band-name" id="band-name-1"></h2>
-										<p>DJ 1: <span id="dj1-name-1"></span></p>
-										<p>DJ 2: <span id="dj2-name-1"></span></p>
+										<p class="dj-name"><span id="dj1-name-1"></span></p>
+										<p class="dj-name"><span id="dj2-name-1"></span></p>
 									</div>
 									<div class="col-md-6">
 										<a
@@ -82,6 +90,7 @@
 											<!-- <div class="counter color4"><span>186</span></div> -->
 											<img src="img/pexels-photo-889087.jpeg" class="band-img" id="band-img-2" />
 										</a>
+										<!--<p id="voted2">Voted Successfully!</p> -->
 										<div class="voting-results" id="v-res-2">
 											<p class="text-center"><span id="voting-number-2"></span>%</p>
 											<div
@@ -93,12 +102,12 @@
 												data-speed="1500"
 												data-color="3a9c23"
 											>
-												<div class="progress-bar progress"></div>
+												<div class="progress-bar progress" id="progressz-2"></div>
 											</div>
 										</div>
 										<h2 class="band-name" id="band-name-2"></h2>
-										<p>DJ 1: <span id="dj1-name-2"></span></p>
-										<p>DJ 2: <span id="dj2-name-2"></span></p>
+										<p class="dj-name">DJ 1: <span id="dj1-name-2"></span></p>
+										<p class="dj-name">DJ 2: <span id="dj2-name-2"></span></p>
 									</div>
 								</div>
 							</div>

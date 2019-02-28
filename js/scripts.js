@@ -39,16 +39,32 @@ var model = {
 if (localStorage.getItem("band")) {
 	model.bands = JSON.parse(localStorage.getItem("band"));
 }
-console.log(model);
+//console.log(model);
 var voteCounter = function(obj, e, band) {
 	e.preventDefault();
 	model.bands = JSON.parse(localStorage.getItem("band"));
-	if (band == "band1") {
-		model.bands[0].votes = model.bands[0].votes + 1;
-	} else if (band == "band2") {
-		model.bands[1].votes = model.bands[1].votes + 1;
+	if (model.bands[2].showResults == 0) {
+		if (band == "band1") {
+			model.bands[0].votes = model.bands[0].votes + 1;
+		} else if (band == "band2") {
+			model.bands[1].votes = model.bands[1].votes + 1;
+		}
+
+		model.bands[2].showResults = 1;
+		obj.setAttribute("class", "band first hvr-grow clicked");
+		localStorage.setItem("band", JSON.stringify(model.bands));
 	}
-	localStorage.setItem("band", JSON.stringify(model.bands));
+	document.getElementById("voted1").style.display = "block";
+	//document.getElementById("voted2").style.display = "block";
+	loadFrontEnd();
+	setTimeout(function() {
+		obj.setAttribute("class", "band first hvr-grow");
+		document.getElementById("voted1").style.display = "none";
+		//document.getElementById("voted2").style.display = "none";
+		model.bands[2].showResults = 0;
+		localStorage.setItem("band", JSON.stringify(model.bands));
+		loadFrontEnd();
+	}, 3000);
 };
 
 var loadFrontEnd = function(obj, e) {
@@ -82,18 +98,18 @@ var loadFrontEnd = function(obj, e) {
 			document.getElementById("voting-number-2").innerText = Math.round(
 				(model.bands[1].votes / totalVotes) * 100
 			);
-			document
-				.getElementById("progress-1")
-				.setAttribute("data-color", model.mentors[model.bands[0].mentor].color.replace("#", ""));
+
+			document.getElementById("progressz-1").style.backgroundColor =
+				model.mentors[model.bands[0].mentor].color;
 			document
 				.getElementById("progress-1")
 				.setAttribute(
 					"data-progresspercent",
 					Math.round((model.bands[0].votes / totalVotes) * 100)
 				);
-			document
-				.getElementById("progress-2")
-				.setAttribute("data-color", model.mentors[model.bands[1].mentor].color.replace("#", ""));
+
+			document.getElementById("progressz-2").style.backgroundColor =
+				model.mentors[model.bands[1].mentor].color;
 			document
 				.getElementById("progress-2")
 				.setAttribute(
@@ -103,6 +119,9 @@ var loadFrontEnd = function(obj, e) {
 
 			document.getElementById("v-res-1").style.display = "block";
 			document.getElementById("v-res-2").style.display = "block";
+		} else {
+			document.getElementById("v-res-1").style.display = "none";
+			document.getElementById("v-res-2").style.display = "none";
 		}
 	}
 };
