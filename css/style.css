@@ -305,3 +305,15 @@ h1.mb-3 {
 #voted2 {
 	display: none;
 }
+
+#manage-btn {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	font-size: 14px;
+}
+
+#manage-btn a,
+#manage-btn a:hover {
+	color: #fff;
+}

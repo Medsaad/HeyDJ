@@ -99,6 +99,9 @@ var loadFrontEnd = function(obj, e) {
 				(model.bands[1].votes / totalVotes) * 100
 			);
 
+			document
+				.getElementById("progress-1")
+				.setAttribute("data-color", model.mentors[model.bands[0].mentor].color.replace("#", ""));
 			document.getElementById("progressz-1").style.backgroundColor =
 				model.mentors[model.bands[0].mentor].color;
 			document
@@ -108,6 +111,9 @@ var loadFrontEnd = function(obj, e) {
 					Math.round((model.bands[0].votes / totalVotes) * 100)
 				);
 
+			document
+				.getElementById("progress-2")
+				.setAttribute("data-color", model.mentors[model.bands[1].mentor].color.replace("#", ""));
 			document.getElementById("progressz-2").style.backgroundColor =
 				model.mentors[model.bands[1].mentor].color;
 			document
