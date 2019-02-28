@@ -53,46 +53,57 @@ var voteCounter = function(obj, e, band) {
 
 var loadFrontEnd = function(obj, e) {
 	//console.log(model.bands[0].mentor);
-	document.getElementById("band-img-1").src = model.mentors[model.bands[0].mentor].image;
-	document.getElementById("band-img-2").src = model.mentors[model.bands[1].mentor].image;
+	if (model.bands[0].mentor == "" && model.bands[1].mentor == "") {
+		document.getElementById("no-content").style.display = "block";
+		document.getElementById("with-content").style.display = "none";
+	} else {
+		document.getElementById("band-img-1").src = model.mentors[model.bands[0].mentor].image;
+		document.getElementById("band-img-2").src = model.mentors[model.bands[1].mentor].image;
 
-	var m1 = model.bands[0].mentor;
-	var m2 = model.bands[1].mentor;
-	document.getElementById("band-name-1").innerText = m1.replace("_", "-");
-	document.getElementById("band-name-1").style.color = model.mentors[model.bands[0].mentor].color;
+		var m1 = model.bands[0].mentor;
+		var m2 = model.bands[1].mentor;
+		document.getElementById("band-name-1").innerText = m1.replace("_", "-");
+		document.getElementById("band-name-1").style.color = model.mentors[model.bands[0].mentor].color;
 
-	document.getElementById("band-name-2").innerText = m2.replace("_", "-");
-	document.getElementById("band-name-2").style.color = model.mentors[model.bands[1].mentor].color;
+		document.getElementById("band-name-2").innerText = m2.replace("_", "-");
+		document.getElementById("band-name-2").style.color = model.mentors[model.bands[1].mentor].color;
 
-	document.getElementById("dj1-name-1").innerText = model.bands[0].dj1;
-	document.getElementById("dj2-name-1").innerText = model.bands[0].dj2;
+		document.getElementById("dj1-name-1").innerText = model.bands[0].dj1;
+		document.getElementById("dj2-name-1").innerText = model.bands[0].dj2;
 
-	document.getElementById("dj1-name-2").innerText = model.bands[1].dj1;
-	document.getElementById("dj2-name-2").innerText = model.bands[1].dj2;
+		document.getElementById("dj1-name-2").innerText = model.bands[1].dj1;
+		document.getElementById("dj2-name-2").innerText = model.bands[1].dj2;
 
-	if (model.bands[2].showResults == 1) {
-		var totalVotes = model.bands[0].votes + model.bands[1].votes;
-		document.getElementById("voting-number-1").innerText = Math.round(
-			(model.bands[0].votes / totalVotes) * 100
-		);
-		document.getElementById("voting-number-2").innerText = Math.round(
-			(model.bands[1].votes / totalVotes) * 100
-		);
-		document
-			.getElementById("progress-1")
-			.setAttribute("data-color", model.mentors[model.bands[0].mentor].color.replace("#", ""));
-		document
-			.getElementById("progress-1")
-			.setAttribute("data-progresspercent", Math.round((model.bands[0].votes / totalVotes) * 100));
-		document
-			.getElementById("progress-2")
-			.setAttribute("data-color", model.mentors[model.bands[1].mentor].color.replace("#", ""));
-		document
-			.getElementById("progress-2")
-			.setAttribute("data-progresspercent", Math.round((model.bands[1].votes / totalVotes) * 100));
+		if (model.bands[2].showResults == 1) {
+			var totalVotes = model.bands[0].votes + model.bands[1].votes;
+			document.getElementById("voting-number-1").innerText = Math.round(
+				(model.bands[0].votes / totalVotes) * 100
+			);
+			document.getElementById("voting-number-2").innerText = Math.round(
+				(model.bands[1].votes / totalVotes) * 100
+			);
+			document
+				.getElementById("progress-1")
+				.setAttribute("data-color", model.mentors[model.bands[0].mentor].color.replace("#", ""));
+			document
+				.getElementById("progress-1")
+				.setAttribute(
+					"data-progresspercent",
+					Math.round((model.bands[0].votes / totalVotes) * 100)
+				);
+			document
+				.getElementById("progress-2")
+				.setAttribute("data-color", model.mentors[model.bands[1].mentor].color.replace("#", ""));
+			document
+				.getElementById("progress-2")
+				.setAttribute(
+					"data-progresspercent",
+					Math.round((model.bands[1].votes / totalVotes) * 100)
+				);
 
-		document.getElementById("v-res-1").style.display = "block";
-		document.getElementById("v-res-2").style.display = "block";
+			document.getElementById("v-res-1").style.display = "block";
+			document.getElementById("v-res-2").style.display = "block";
+		}
 	}
 };
 

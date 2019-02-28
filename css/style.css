@@ -296,3 +296,15 @@ h1.mb-3 {
 	margin-top: 10px;
 	margin: 0;
 }
+
+#no-content {
+	display: none;
+}
+
+#no-content .mb-3 a {
+	color: #fff;
+	font-size: 30px;
+}
+.mb-3 a:hover {
+	text-decoration: none;
+}
