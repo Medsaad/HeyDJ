@@ -56,10 +56,12 @@ var loadFrontEnd = function(obj, e) {
 	document.getElementById("band-img-1").src = model.mentors[model.bands[0].mentor].image;
 	document.getElementById("band-img-2").src = model.mentors[model.bands[1].mentor].image;
 
-	document.getElementById("band-name-1").innerText = model.bands[0].mentor.replace("_", "-");
+	var m1 = model.bands[0].mentor;
+	var m2 = model.bands[1].mentor;
+	document.getElementById("band-name-1").innerText = m1.replace("_", "-");
 	document.getElementById("band-name-1").style.color = model.mentors[model.bands[0].mentor].color;
 
-	document.getElementById("band-name-2").innerText = model.bands[1].mentor.replace("_", "-");
+	document.getElementById("band-name-2").innerText = m2.replace("_", "-");
 	document.getElementById("band-name-2").style.color = model.mentors[model.bands[1].mentor].color;
 
 	document.getElementById("dj1-name-1").innerText = model.bands[0].dj1;
