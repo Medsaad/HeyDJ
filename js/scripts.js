@@ -20,12 +20,12 @@ var model = {
 		Misty1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["Ahmed Alaa", "Ahmed Moenes"]
+			djs: ["Omar Gouda", "Ahmed Moenes"]
 		},
 		Misty2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["Emery Swelam", "Omar Gouda"]
+			djs: ["Emery Swelam", "Ahmed Alaa"]
 		},
 		A_Squared1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
@@ -40,12 +40,12 @@ var model = {
 		Mohasseb1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["Alsharif Mahlab", "Farah Hefny"]
+			djs: ["Alsharif Mahlab", "Hassan El Far"]
 		},
 		Mohasseb2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["Hassan El Far", "Kareem Anis"]
+			djs: ["Farah Hefny", "Kareem Anis"]
 		},
 		Ashmawy1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
