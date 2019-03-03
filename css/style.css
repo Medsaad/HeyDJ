@@ -177,7 +177,8 @@ video {
 }
 
 .band-img {
-	width: 100%;
+	width: 50%;
+	float: left;
 }
 
 .band-overlay {

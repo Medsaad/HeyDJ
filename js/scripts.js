@@ -20,42 +20,42 @@ var model = {
 		Misty1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Ahmed Alaa", "Ahmed Moenes"]
 		},
 		Misty2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MISTY.jpg",
 			color: "#00c2ae",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Emery Swelam", "Omar Gouda"]
 		},
 		A_Squared1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Adham Dou", "Basel Aly"]
 		},
 		A_Squared2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/A-SQUARED.jpg",
 			color: "#f45b00",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Hatem Zahran", "Mohamed Fattah"]
 		},
 		Mohasseb1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Alsharif Mahlab", "Farah Hefny"]
 		},
 		Mohasseb2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/MOHASSEB.jpg",
 			color: "#6e1390",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Hassan El Far", "Kareem Anis"]
 		},
 		Ashmawy1: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Amr Fathi", "Omar Arafa"]
 		},
 		Ashmawy2: {
 			image: "https://heydjmusic.com/wp-content/uploads/2019/02/ASHMAWY.jpg",
 			color: "#62d350",
-			djs: ["DJ1", "DJ2"]
+			djs: ["Omar Tarek", "Taimour Omar"]
 		}
 	}
 };
@@ -112,8 +112,18 @@ var loadFrontEnd = function(obj, e) {
 		document.getElementById("no-content").style.display = "block";
 		document.getElementById("with-content").style.display = "none";
 	} else {
-		document.getElementById("band-img-1").src = model.mentors[model.bands[0].mentor].image;
+		/* document.getElementById("band-img-1").src = model.mentors[model.bands[0].mentor].image;
 		document.getElementById("band-img-2").src = model.mentors[model.bands[1].mentor].image;
+ */
+		document.getElementById("band-img-11").src =
+			"img/djs/" + model.mentors[model.bands[0].mentor].djs[0] + ".jpg";
+		document.getElementById("band-img-12").src =
+			"img/djs/" + model.mentors[model.bands[0].mentor].djs[1] + ".jpg";
+
+		document.getElementById("band-img-21").src =
+			"img/djs/" + model.mentors[model.bands[1].mentor].djs[0] + ".jpg";
+		document.getElementById("band-img-22").src =
+			"img/djs/" + model.mentors[model.bands[1].mentor].djs[1] + ".jpg";
 
 		var m1 = model.bands[0].mentor;
 		var m2 = model.bands[1].mentor;
