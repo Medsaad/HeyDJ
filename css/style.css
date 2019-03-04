@@ -62,7 +62,7 @@ body {
 }
 
 .masthead .masthead-content h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-family: "Gotham Book" !important;
 }
 
@@ -105,7 +105,7 @@ body {
 		max-width: 800px;
 	}
 	.masthead .masthead-content h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 1.4;
 		margin-block-start: 1em;
 		margin-block-end: 1em;
@@ -330,4 +330,7 @@ h1.mb-3 {
 	#voted-wrapper {
 		top: 100px;
 	}
+
+	#with-content > .row > .col-sm-4{ width: 25%; }
+	#with-content > .row > .col-sm-8{ width: 75%; }
 }
