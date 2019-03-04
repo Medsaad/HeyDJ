@@ -333,4 +333,5 @@ h1.mb-3 {
 
 	#with-content > .row > .col-sm-4{ width: 25%; }
 	#with-content > .row > .col-sm-8{ width: 75%; }
+	#manage-btn{ right: 5px;}
 }
