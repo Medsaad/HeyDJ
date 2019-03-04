@@ -325,6 +325,7 @@ h1.mb-3 {
 	position: absolute;
 	top: 157px;
 }
+#no-content h1 a{ display: block;}
 
 @media (max-width: 900px) {
 	#voted-wrapper {

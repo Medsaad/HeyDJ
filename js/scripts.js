@@ -222,6 +222,7 @@ var resetData = function(obj, e) {
 			}
 		])
 	);
+	model.bands = JSON.parse(localStorage.getItem("band"));
 };
 
 var showResults = function(obj, e) {
