@@ -32,11 +32,12 @@ video {
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 0;
 }
-
+body {
+	background: #000;
+}
 @media (pointer: coarse) and (hover: none) {
 	body {
-		background-color: #000;
-		background-position: cover;
+		background: #000;
 	}
 	body video {
 		display: none;
