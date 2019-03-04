@@ -200,8 +200,8 @@ var saveData = function(obj, e) {
 };
 
 var resetData = function(obj, e) {
-	console.log(model.bands);
-
+	//console.log(model.bands);
+	e.preventDefault();
 	localStorage.setItem(
 		"band",
 		JSON.stringify([
